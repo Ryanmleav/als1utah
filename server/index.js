@@ -3,7 +3,7 @@ const express = require("express");
 const massive = require("massive");
 const session = require("express-session");
 const { checkAdmin } = require("./controllers/middleware");
-const adminCtrl = require("./controllers/admin");
+const adminCtrl = require("./controllers/adminController");
 
 const { SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env;
 

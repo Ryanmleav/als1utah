@@ -1,8 +1,10 @@
 import { Switch, Route } from 'react-router-dom'
 import Home from "./Components /Home"
+import Admin from './Components /Admin'
 
 export default (
   <Switch>
-    <Route exact path='/home' component={Home} />
+    <Route exact path='/' component={Home} />
+    <Route path='/admin' component={Admin} />
   </Switch>
 )
