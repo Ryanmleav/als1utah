@@ -15,7 +15,7 @@ module.exports = {
         const [newAdmin] = await db.admin.register_admin([userName, hash]);
         delete newAdmin.password;
 
-        req.session.user = newUser;
+        req.session.user = newAdmin;
         res.status(200).send(req.session.user);
       }
     } catch (err) {
