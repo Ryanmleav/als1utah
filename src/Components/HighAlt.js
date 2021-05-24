@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./Header";
+import '../App.css'
 
 const HighAlt = () => {
-  
   return (
     <div className="home">
       <Header />

@@ -12,7 +12,7 @@ export default (
     <Route path="/admin" component={Admin} />
     <Route path="/classes" component={Classes} />
     <Route path="/schedule" component={Schedule} />
-    <Route path="/science" components={Science} />
-    <Route path="/highalt" components={HighAlt} />
+    <Route path="/science" component={Science} />
+    <Route path="/highalt" component={HighAlt} />
   </Switch>
 );

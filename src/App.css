@@ -19,8 +19,6 @@ header {
   display: inline-flex;
 }
 
-
-
 a {
   font-size: 20px;
   margin: 13px;
@@ -87,7 +85,7 @@ h1 {
 }
 
 .container .card .face.face1 .content img {
-  max-width: 100px;
+  width: 231px;
 }
 
 .container .card .face.face1 .content h3 {
