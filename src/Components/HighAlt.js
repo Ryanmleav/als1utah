@@ -1,16 +1,13 @@
-import "./App.css";
-import routes from "./routes";
-// import logo from "./assets/logo.jpg";
-// import video from "./assets/Riot - 423 (4).mp4";
-// import { Link } from "react-router-dom";
+import React from "react";
+import Header from "./Header";
 
-function App() {
+const HighAlt = () => {
+  
   return (
-    <div>
-        {routes}
-     
-      
-      {/* <div class="highalt">
+    <div className="home">
+      <Header />
+
+      <div class="highalt">
         <h1>ALS1UTAH High Altitude Training</h1>
         <div id="highalt" class="container">
           <div class="card">
@@ -135,9 +132,8 @@ function App() {
             </div>
           </div>
         </div>
-      </div> */}  
+      </div>
     </div>
   );
-}
-
-export default App;
+};
+export default HighAlt;

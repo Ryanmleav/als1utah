@@ -15,10 +15,10 @@ const Header = ({ logoutAdmin, user }) => {
         <div className="links">
           <Link to='/' ><FontAwesomeIcon className='icon' icon={faHome}/></Link>
           <Link to='/classes'>Classes</Link>
-          <Link to="/schedule"><FontAwesomeIcon className='icon' icon={faCalendarWeek}/></Link>
-           <Link to="/science">Science  & Technology</Link>
-          {/* <Link to="#highalt">High Altitude Training</Link>
-          <Link to="#aboutus">About Us</Link>  */}
+          <Link to='/schedule'><FontAwesomeIcon className='icon' icon={faCalendarWeek}/></Link>
+          <Link to='/science'>Science&Tech</Link>
+          <Link to="/highalt">High Altitude Training</Link>
+          <Link to="/aboutus">About Us</Link>  
           <Link to='/admin'>Admin</Link>
           {/* <Link
         to="/"
