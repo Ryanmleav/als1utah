@@ -8,7 +8,7 @@ const HighAlt = () => {
       <Header />
 
       <div class="highalt">
-        <h1>ALS1UTAH High Altitude Training</h1>
+        <h1 className='alti'>ALS1UTAH High Altitude Training</h1>
         <div id="highalt" class="container">
           <div class="card">
             <div class="face face1">

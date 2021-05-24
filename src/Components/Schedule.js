@@ -6,7 +6,7 @@ const Schedule = () => {
     <div className="Home">
       <Header />
       <div>
-        <h2 class="ready">ALS1UTAH Training Schedule</h2>
+        <h2 class="trainsched">ALS1UTAH Training Schedule</h2>
       </div>
     </div>
   );

@@ -6,6 +6,11 @@ header {
   justify-content: flex-start;
   flex-direction: row;
 }
+body {
+  background-image: url("./assets/Flag.jpeg");
+  background-repeat: none;
+  background-size: cover;
+}
 
 .logo {
   height: auto;
@@ -29,16 +34,76 @@ a {
 .courses {
   font-family: Western;
   font-size: 39px;
+  margin-left: 550px;
+  color: whitesmoke;
+}
+
+.trainsched {
+  font-size: 52px;
+  font-family: Western;
+  margin-left: 460px;
+  color: whitesmoke;
 }
 
 h1 {
   font-family: Western;
   font-size: 39px;
   letter-spacing: 5px;
+  color: whitesmoke;
+  margin-left: 600px;
 }
 .ready {
   font-size: 52px;
   font-family: Western;
+  margin-left: 300px;
+  color: whitesmoke;
+}
+.video {
+  margin-left: 80px;
+}
+
+.partners {
+  font-family: Western;
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: whitesmoke;
+  margin-left: 600px;
+}
+
+.nasapic {
+  margin-left: 439px;
+  margin-right: 13px;
+}
+.uvupic {
+  margin-right: 13px;
+}
+
+h3 {
+  color: whitesmoke;
+  margin-left: 458px;
+  font-family: Western;
+  letter-spacing: 5px;
+  font-size: 26px;
+}
+
+h4 {
+  color: whitesmoke;
+  margin-left: 250px;
+  font-family: Western;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.projectinfo {
+  color: whitesmoke;
+  margin-left: 377px;
+  font-family: Western;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.alti {
+  margin-left: 426px;
 }
 
 .container {
@@ -47,6 +112,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-left: 225px;
 }
 
 .container .card {
@@ -133,14 +199,15 @@ h1 {
 }
 
 .auth-title {
-  color: rgb(5, 5, 5);
   font-family: Western;
   font-size: 52px;
-  margin-left: 13vw;
+  letter-spacing: 5px;
+  color: whitesmoke;
+  margin-left: 600px;
 }
 
 .auth-sign-in {
-  margin-left: 2vw;
+  margin-left: 452px;
 }
 
 .auth-reminder {

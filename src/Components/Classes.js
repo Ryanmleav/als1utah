@@ -8,6 +8,7 @@ const Classes = () => {
       <div className="Header-Container" >
         <Header />
       </div>
+      <div className='background'>
       <h1 class="courses">ALS1UTAH Classes</h1>
       <div id="course" class="container">
         <div class="card">
@@ -111,6 +112,7 @@ const Classes = () => {
               <p>info on class</p>
               <a href="#">Book Now</a>
             </div>
+          </div>
           </div>
         </div>
       </div>
