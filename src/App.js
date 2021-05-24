@@ -8,129 +8,8 @@ function App() {
   return (
     <div>
         {routes}
-      {/* <header class="main-header">
-        <img class="logo" src={logo} alt="logo"></img>
-        <div class="links">
-          <a href="#course">Classes</a>
-          <a href="#cal-wrap">Sign Up</a>
-          <a href="#science">Science & Technology </a>
-          <a href="#highalt">High Altitude Training</a>
-          <a href="#aboutus">About Us</a>
-        </div>
-      </header>
-      <div class="intro">
-        <h2 class="ready">ALS1UTAH Wants To Know Are You Ready</h2>
-        <video width="320" height="240" autoPlay loop>
-          <source src={video} type="video/mp4"></source>
-        </video>
-      </div>
-      <h1 class="courses">ALS1UTAH Classes</h1>
-      <div id="course" class="container">
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img
-                src="https://blogmedia.wideners.com/blog/wp-content/uploads/DSC3836-Web.jpg"
-                alt="carry"
-              ></img>
-              <h3>Concealed Carry</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>info on class</p>
-              <a>Book Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img
-                src="https://i.pinimg.com/originals/78/e9/8b/78e98b5cc66566cd104ef38eeda8383a.png"
-                alt="med"
-              ></img>
-              <h3>ITREK</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>info on class</p>
-              <a href="#">Book Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img
-                src="https://tmrfirearmstraining.com/wp-content/uploads/2019/03/Logo-Fade-Arches-gold-1-300x129.png"
-                alt="begin"
-              ></img>
-              <h3>Beginner Defensive Pistol</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>info on class</p>
-              <a href="#">Book Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img
-                src="https://tmrfirearmstraining.com/wp-content/uploads/2019/03/Logo-Fade-Arches-gold-1-300x129.png"
-                alt="two"
-              ></img>
-              <h3>Level II Defensive Pistol</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>info on class</p>
-              <a href="#">Book Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img
-                src="https://tmrfirearmstraining.com/wp-content/uploads/2019/03/Logo-Fade-Arches-gold-1-300x129.png"
-                alt="advanced"
-              ></img>
-              <h3>Advanced Defensive Pistol</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>info on class</p>
-              <a href="#">Book Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbk9yxZrEj9qVZVdH7yhxDiNDXlxSvRU8MCg&usqp=CAU"
-                alt="precision"
-              ></img>
-              <h3>Precision Long Rifle Course</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>info on class</p>
-              <a href="#">Book Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="science" class="techno">
+     
+      {/* <div id="science" class="techno">
         <h1>Technologies</h1>
         <h2>Our Partners</h2>
         <img
@@ -277,7 +156,7 @@ function App() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div> */} 
     </div>
   );
 }
