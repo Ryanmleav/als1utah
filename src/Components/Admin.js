@@ -40,7 +40,7 @@ const Admin = ({ getAdmin }) => {
           <input
             className="auth-input-username"
             placeholder="username"
-            name="username"
+            name="userName"
             onChange={(e) => changeHandler(e)}
           />
           <input

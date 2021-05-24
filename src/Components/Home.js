@@ -12,7 +12,7 @@ const Home = () => {
      <Header />
      <div class="intro">
         <h2 class="ready">ALS1UTAH Wants To Know Are You Ready?</h2>
-        <video className='video'  autoPlay loop>
+        <video  autoPlay loop>
           <source src={video} type="video/mp4"></source>
         </video>
       </div>

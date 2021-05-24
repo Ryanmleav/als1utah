@@ -1,35 +1,36 @@
 const initialState = {
-  user: null,
-  isLoggedIn: false
-}
+  admin: null,
+  isLoggedIn: false,
+};
 
-const GET_USER = 'GET_USER';
-const LOGOUT_USER = 'LOGOUT_USER';
+const GET_ADMIN = "GET_ADMIN";
+const LOGOUT_ADMIN = "LOGOUT_ADMIN";
 
 export function getAdmin(user) {
   return {
-    type: GET_USER,
-    payload: user
-  }
+    type: GET_ADMIN,
+    payload: user,
+  };
 }
 
 export function logoutAdmin() {
   return {
-    type: LOGOUT_USER,
-    payload: initialState
-  }
+    type: LOGOUT_ADMIN,
+    payload: initialState,
+  };
 }
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
-    case GET_USER:
+    case GET_ADMIN:
       return {
         ...state,
         user: action.payload,
-        isLoggedIn: true
-      }
-    case LOGOUT_USER:
+        isLoggedIn: true,
+      };
+    case LOGOUT_ADMIN:
       return initialState;
-    default: return state
+    default:
+      return state;
   }
 }
