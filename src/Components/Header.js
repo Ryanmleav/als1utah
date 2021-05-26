@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({ logoutAdmin, user }) => {
-
   const [toggle, setToggle] = useState(false);
   function cartDropdown() {
     setToggle(!toggle);
@@ -26,8 +25,10 @@ const Header = ({ logoutAdmin, user }) => {
           <Link to="/schedule">
             <FontAwesomeIcon className="icon" icon={faCalendarWeek} />
           </Link>
+          <Link to='/gunsammo'>Guns&Ammo</Link>
           <Link to="/science">Science&Tech</Link>
           <Link to="/highalt">High Altitude Training</Link>
+          <Link to='/news'>Global News</Link>
           <Link to="/aboutus">About Us</Link>
 
           {!user.isLoggedIn ? (
@@ -39,12 +40,11 @@ const Header = ({ logoutAdmin, user }) => {
                 setToggle(!toggle);
               }}
               className="dashboard-button"
-              to={`/admin`}
+              to={`/`}
             >
               Sign Out
             </Link>
           )}
-          
         </div>
       </header>
     </div>
