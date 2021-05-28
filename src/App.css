@@ -7,7 +7,7 @@
   margin-left: 300px;
 }
 .e-calendar .e-content table {
-  height: 600px
+  height: 600px;
 }
 header {
   display: flex;
@@ -238,3 +238,8 @@ h4 {
   transform: translateY(4px);
 }
 
+.calander {
+  margin-left: 55px;
+  height: 1300px;
+  width: 1300px;
+}

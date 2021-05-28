@@ -28,7 +28,7 @@ class News extends Component {
         <div className="form content-box">
           <div className="form-main">
             <div className="form-input-box">
-              <p>Title:</p>
+              <p className='newsfeed'>Title:</p>
               <input
                 value={this.state.title}
                 onChange={(e) => this.setState({ title: e.target.value })}
@@ -36,7 +36,7 @@ class News extends Component {
             </div>
             <div className="form-input-box"></div>
             <div className="form-text-box">
-              <p>Content:</p>
+              <p className='newsfeed'>Content:</p>
               <textarea
                 value={this.state.content}
                 onChange={(e) => this.setState({ content: e.target.value })}

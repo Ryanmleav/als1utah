@@ -41,3 +41,6 @@ app.post("/admin/register", adminCtrl.registerAdmin);
 app.post("/admin/login", adminCtrl.loginAdmin);
 app.post("/admin/logout", adminCtrl.logoutAdmin);
 app.get("/admin/me", checkAdmin, adminCtrl.getAdmin);
+
+// ENPOINTS - NEWS
+app.post("/api/post")
