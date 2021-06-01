@@ -9,3 +9,9 @@ CREATE TABLE news (
   content TEXT,
   date_created TIMESTAMP
 );
+
+CREATE TABLE guns_ammo{
+  guns_id SERIAL PRIMARY KEY,
+  content TEXT,
+  date_created TIMESTAMP
+}

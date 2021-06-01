@@ -280,3 +280,18 @@ ul {
   color: #ffffff;
   text-decoration: none;
 }
+
+.gunsmain{
+  display: inline-flex;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+.gunsammo{
+  height: 30vh;
+  width: 30vw;
+}
+.gunstext{
+  color: whitesmoke;
+  font-family: Western;
+  font-size: 39px;
+}

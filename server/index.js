@@ -5,6 +5,7 @@ const session = require("express-session");
 const { checkAdmin } = require("./controllers/middleware");
 const adminCtrl = require("./controllers/adminController");
 const newsCtrl = require("./controllers/newsController");
+const gunsCtrl = require('./controllers/gunsController')
 
 const { SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env;
 
@@ -46,3 +47,7 @@ app.get("/admin/me", checkAdmin, adminCtrl.getAdmin);
 // ENPOINTS - NEWS
 app.post("/news/post", newsCtrl.createNews);
 app.get("/news/all", newsCtrl.getNews);
+
+// ENPOINTS - GUNS
+app.post("/guns/new", gunsCtrl.createGuns);
+app.get("/guns/all", gunsCtrl.getGuns)
