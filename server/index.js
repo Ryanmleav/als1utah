@@ -4,6 +4,7 @@ const massive = require("massive");
 const session = require("express-session");
 const { checkAdmin } = require("./controllers/middleware");
 const adminCtrl = require("./controllers/adminController");
+const newsCtrl = require("./controllers/newsController");
 
 const { SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env;
 
@@ -43,4 +44,5 @@ app.post("/admin/logout", adminCtrl.logoutAdmin);
 app.get("/admin/me", checkAdmin, adminCtrl.getAdmin);
 
 // ENPOINTS - NEWS
-app.post("/api/post")
+app.post("/news/post", newsCtrl.createNews);
+app.get("/news/all", newsCtrl.getNews);

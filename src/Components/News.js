@@ -7,7 +7,6 @@ class News extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "",
       content: "",
     };
     this.submit = this.submit.bind(this);
@@ -16,7 +15,7 @@ class News extends Component {
   submit() {
     console.log(this.props);
     axios
-      .post("/api/post", this.state)
+      .post("/news/post", this.state)
       .then(() => this.props.history.push("/news"))
       .catch((err) => console.log(err));
   }
@@ -27,16 +26,9 @@ class News extends Component {
         <Header />
         <div className="form content-box">
           <div className="form-main">
-            <div className="form-input-box">
-              <p className='newsfeed'>Title:</p>
-              <input
-                value={this.state.title}
-                onChange={(e) => this.setState({ title: e.target.value })}
-              />
-            </div>
             <div className="form-input-box"></div>
             <div className="form-text-box">
-              <p className='newsfeed'>Content:</p>
+              <p className="newsfeed">Content:</p>
               <textarea
                 value={this.state.content}
                 onChange={(e) => this.setState({ content: e.target.value })}

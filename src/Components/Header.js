@@ -26,11 +26,6 @@ const Header = ({ logoutAdmin, user }) => {
             <FontAwesomeIcon className="icon" icon={faCalendarWeek} />
           </Link>
           <Link to='/gunsammo'>Guns&Ammo</Link>
-          <Link to="/science">Science&Tech</Link>
-          <Link to="/highalt">High Altitude Training</Link>
-          <Link to='/news'>Global News</Link>
-          <Link to="/aboutus">About Us</Link>
-
           {!user.isLoggedIn ? (
             <Link to="/admin">Admin</Link>
           ) : (
@@ -45,6 +40,66 @@ const Header = ({ logoutAdmin, user }) => {
               Sign Out
             </Link>
           )}
+          <div className="nav-cart-dropdown">
+        <button onClick={cartDropdown} className="cart-dropdown">
+          ☰
+        </button>
+        {toggle ? (
+          <ul className="dropdown-content">
+            <li>
+              <Link
+                onClick={() => {
+                  setToggle(!toggle);
+                }}
+                className="dropdown-link"
+                to={`/highalt`}
+              >
+                High Altitude Training
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => {
+                  setToggle(!toggle);
+                }}
+                className="dropdown-link"
+                to={`/news`}
+              >
+                Global News
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => {
+                  setToggle(!toggle);
+                }}
+                className="dropdown-link"
+                to={`/science`}
+              >
+                Science&Tech
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => {
+                  setToggle(!toggle);
+                }}
+                className="dropdown-link"
+                to={`/aboutus`}
+              >
+                About Us
+              </Link>
+            </li>
+          
+          </ul>
+        ) : null}
+      </div>
+          {/* <Link to="/science">Science&Tech</Link> */}
+          {/* <Link to="/highalt">High Altitude Training</Link> */}
+          {/* <Link to='/news'>Global News</Link> */}
+          {/* <Link to="/aboutus">About Us</Link> */}
+
+          
         </div>
       </header>
     </div>

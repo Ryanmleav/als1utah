@@ -6,6 +6,6 @@ password VARCHAR(100)
 
 CREATE TABLE news (
   news_id SERIAL PRIMARY KEY,
-  date_created TIMESTAMP,
-  content TEXT
+  content TEXT,
+  date_created TIMESTAMP
 );
