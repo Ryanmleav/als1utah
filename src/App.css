@@ -117,6 +117,8 @@ h4 {
   margin-left: 426px;
 }
 
+/* cards for classes and altitude training */
+
 .container {
   width: 1000px;
   position: relative;
@@ -209,6 +211,7 @@ h4 {
   color: #fff;
 }
 
+/* Auth page */
 .auth-title {
   font-family: Western;
   font-size: 52px;
@@ -244,9 +247,9 @@ h4 {
   width: 1300px;
 }
 
+/* menu dropdown */
 .nav-cart-dropdown {
   position: relative;
-  
 }
 
 .cart-dropdown {
@@ -255,7 +258,6 @@ h4 {
   border: none;
   font-size: 26px;
 }
-
 
 .dropdown-content {
   background-color: transparent;
@@ -275,23 +277,41 @@ ul {
   text-decoration: none;
 }
 
-
 .dropdown-link {
   color: #ffffff;
   text-decoration: none;
 }
 
-.gunsmain{
+/* GunsAmmo */
+.gunsmain {
   display: inline-flex;
   width: 100vw;
   justify-content: space-evenly;
 }
-.gunsammo{
+.gunsammo {
   height: 30vh;
   width: 30vw;
 }
-.gunstext{
+.gunstext {
   color: whitesmoke;
   font-family: Western;
   font-size: 39px;
+}
+
+.dealslist {
+  color: whitesmoke;
+  font-family: Western;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+}
+
+/* news posts */
+
+.newsposts {
+  color: whitesmoke;
+  font-family: Western;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
 }

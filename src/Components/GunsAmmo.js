@@ -1,24 +1,21 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import axios from "axios";
+import {useSelector} from 'react-redux'
 import Header from "./Header";
 
-class GunsAmmo extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      content: "",
-    };
-    this.submit = this.submit.bind(this);
-  }
+const GunsAmmo = (props) => {
+  const {isLoggedIn} = useSelector((stateRedux) => stateRedux.user)
+  const [content, setContent] = useState('')
 
-  submit() {
-    console.log(this.props);
+  const submit = () => {
+    console.log(props);
     axios
       .post("/news/post", this.state)
-      .then(() => this.props.history.push("/news"))
+      .then(() => props.history.push("/news"))
       .catch((err) => console.log(err));
   }
-  render() {
+  
+  console.log(isLoggedIn)
     return (
       <div>
         <Header />
@@ -29,26 +26,33 @@ class GunsAmmo extends Component {
             alt="ammoflag"
           ></img>
           <p className="gunstext">
-            FFL special orders<br></br> Check below for some of our specials
+            FFL special orders<br></br> Check below for our specials
           </p>
         </div>
+        {isLoggedIn ? ( 
         <div className="form content-box">
           <div className="form-main">
             <div className="form-input-box"></div>
             <div className="form-text-box">
               <p className="newsfeed">Content:</p>
               <textarea
-                value={this.state.content}
-                onChange={(e) => this.setState({ content: e.target.value })}
+                value={content}
+                onChange={(e) => setContent(e.target.value)}
               />
             </div>
           </div>
-          <button onClick={this.submit} className="dark-button">
+          <button onClick={submit} className="dark-button">
             Post
           </button>
         </div>
+
+        ) : (
+          <div className='dealslist'>Deals List</div>
+
+        )}
+        
       </div>
     );
   }
-}
+
 export default GunsAmmo;

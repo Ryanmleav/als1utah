@@ -41,7 +41,7 @@ const News = (props) => {
         </div>
 
         ) : (
-          <div>Post List</div>
+          <div className='newsposts'>Daily news</div>
 
         )}
         
