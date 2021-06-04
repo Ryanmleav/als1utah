@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Header from "./Header";
-import {useSelector} from 'react-redux'
+import { useSelector } from "react-redux";
 import "../Form.css";
 
 const News = (props) => {
-  const {isLoggedIn} = useSelector((stateRedux) => stateRedux.user)
-  
-   const [content, setContent] = useState('')
-      
-    
+  const { isLoggedIn } = useSelector((stateRedux) => stateRedux.user);
+
+  const [content, setContent] = useState("");
 
   const submit = () => {
     console.log(props);
@@ -17,13 +15,13 @@ const News = (props) => {
       .post("/news/post", this.state)
       .then(() => props.history.push("/news"))
       .catch((err) => console.log(err));
-  }
+  };
 
-  console.log(isLoggedIn)
-    return (
-      <div>
-        <Header />
-        {isLoggedIn ? ( 
+  console.log(isLoggedIn);
+  return (
+    <div>
+      <Header />
+      {isLoggedIn ? (
         <div className="form content-box">
           <div className="form-main">
             <div className="form-input-box"></div>
@@ -39,15 +37,11 @@ const News = (props) => {
             Post
           </button>
         </div>
-
-        ) : (
-          <div className='newsposts'>Daily news</div>
-
-        )}
-        
-      </div>
-    );
-  }
-
+      ) : (
+        <div className="newsposts">Daily news</div>
+      )}
+    </div>
+  );
+};
 
 export default News;

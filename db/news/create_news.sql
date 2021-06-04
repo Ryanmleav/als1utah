@@ -1,5 +1,5 @@
 INSERT INTO news
-(content, date_created)
+(content, posting_date)
 VALUES
 ($1, $2)
 RETURNING *

@@ -1,2 +1,2 @@
 SELECT * FROM news
-WHERE date_created = $1;
+WHERE posting_date = $1;

@@ -42,6 +42,11 @@ a {
   color: rgb(8, 8, 8);
 }
 
+a:hover{
+  font-size: 26px;
+  font-weight: 700;
+}
+
 .courses {
   font-family: Western;
   font-size: 39px;
@@ -185,6 +190,7 @@ h4 {
   box-sizing: border-box;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   transform: translateY(-100px);
+  overflow: scroll;
 }
 
 .container .card:hover .face.face2 {
@@ -194,6 +200,7 @@ h4 {
 .container .card .face.face2 .content p {
   margin: 0;
   padding: 0;
+  
 }
 
 .container .card .face.face2 .content a {
@@ -257,6 +264,7 @@ h4 {
   color: rgb(0, 0, 0);
   border: none;
   font-size: 26px;
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -314,4 +322,16 @@ ul {
   font-size: 26px;
   display: flex;
   justify-content: center;
+}
+
+.paymentinfo{
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.refunds{
+  font-size: 26px;
+  font-family: Western;
+  color: whitesmoke;
+  margin-left: 13px;
 }

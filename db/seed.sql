@@ -7,11 +7,11 @@ password VARCHAR(100)
 CREATE TABLE news (
   news_id SERIAL PRIMARY KEY,
   content TEXT,
-  date  TEXT,
+  posting_date DATE NOT NULL DEFAULT CURRENT_DATE
 );
 
 CREATE TABLE guns_ammo{
   guns_id SERIAL PRIMARY KEY,
   content TEXT,
-  date_created TIMESTAMP
+  posting_date DATE NOT NULL DEFAULT CURRENT_DATE
 }
