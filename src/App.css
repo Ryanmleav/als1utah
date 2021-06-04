@@ -42,7 +42,7 @@ a {
   color: rgb(8, 8, 8);
 }
 
-a:hover{
+a:hover {
   font-size: 26px;
   font-weight: 700;
 }
@@ -200,7 +200,6 @@ h4 {
 .container .card .face.face2 .content p {
   margin: 0;
   padding: 0;
-  
 }
 
 .container .card .face.face2 .content a {
@@ -216,6 +215,19 @@ h4 {
 .container .card .face.face2 .content a:hover {
   background: #333;
   color: #fff;
+}
+
+.trek {
+  height: 150px;
+}
+
+.pistoltrain {
+  margin-left: 35px;
+  height: 130px;
+}
+
+.rifletrain {
+  margin-left: 35px;
 }
 
 /* Auth page */
@@ -324,14 +336,32 @@ ul {
   justify-content: center;
 }
 
-.paymentinfo{
+.paymentinfo {
   display: inline-flex;
   justify-content: space-between;
 }
 
-.refunds{
+.refunds {
   font-size: 26px;
   font-family: Western;
   color: whitesmoke;
   margin-left: 13px;
+}
+
+.chief {
+  height: 140px;
+}
+
+.washington {
+  height: 140px;
+}
+
+.buddah {
+  height: 140px;
+  margin-left: 25px;
+}
+
+.genghis {
+  height: 140px;
+  margin-left: 15px;
 }

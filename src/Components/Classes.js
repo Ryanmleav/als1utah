@@ -32,6 +32,7 @@ const Classes = () => {
           <div class="face face1">
             <div class="content">
               <img
+              className='trek'
                 src="https://i.pinimg.com/originals/78/e9/8b/78e98b5cc66566cd104ef38eeda8383a.png"
                 alt="med"
               ></img>
@@ -49,6 +50,7 @@ const Classes = () => {
           <div class="face face1">
             <div class="content">
               <img
+              className='pistoltrain'
                 src="https://tmrfirearmstraining.com/wp-content/uploads/2019/03/Logo-Fade-Arches-gold-1-300x129.png"
                 alt="begin"
               ></img>
@@ -66,6 +68,7 @@ const Classes = () => {
           <div class="face face1">
             <div class="content">
               <img
+              className='pistoltrain'
                 src="https://tmrfirearmstraining.com/wp-content/uploads/2019/03/Logo-Fade-Arches-gold-1-300x129.png"
                 alt="two"
               ></img>
@@ -83,6 +86,7 @@ const Classes = () => {
           <div class="face face1">
             <div class="content">
               <img
+              className='pistoltrain'
                 src="https://tmrfirearmstraining.com/wp-content/uploads/2019/03/Logo-Fade-Arches-gold-1-300x129.png"
                 alt="advanced"
               ></img>
@@ -101,6 +105,7 @@ const Classes = () => {
           <div class="face face1">
             <div class="content">
               <img
+              className='rifletrain'
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbk9yxZrEj9qVZVdH7yhxDiNDXlxSvRU8MCg&usqp=CAU"
                 alt="precision"
               ></img>
